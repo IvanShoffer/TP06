@@ -15,10 +15,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        bd baseDatos = new bd();
+        HttpContext.Session.SetString("baseDatos", objeto.ObjectToString(baseDatos));
         return View("Index");
     }
 
-    public IActionResult iniciarSesion(){
+    public IActionResult iniciarSesion(string intentoU, string intentoC){
+        bd baseDatos = objeto.StringToObject<bd>(HttpContext.Session.GetString("baseDatos"));
+        @ViewBag.listaIntegrantes=baseDatos.iniciarSesion(intentoU,intentoC);
+        HttpContext.Session.SetString("baseDatos", objeto.ObjectToString(baseDatos));
         return View("mostrarEquipo");
     }
 }

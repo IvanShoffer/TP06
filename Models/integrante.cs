@@ -1,22 +1,12 @@
-using Newtonsoft.Json;
-
 public class integrante{
-    [JsonProperty]
-    private int id;
-    [JsonProperty]
-    private string nombre;
-    [JsonProperty]
-    private string contraseña;
-    [JsonProperty]
-    private string hobbie;
-    [JsonProperty]
-    private bool restriccionAlimenticia;
-    [JsonProperty]
-    private string domicilio;
-    [JsonProperty]
-    private int edad;
-    [JsonProperty]
-    private string nombreGrupo;
+    public int id{get; private set;}
+    public string nombre{get; private set;}
+    public string contraseña{get; private set;}
+    public string hobbie{get; private set;}
+    public bool restriccionAlimenticia{get; private set;}
+    public string domicilio{get; private set;}
+    public int edad{get; private set;}
+    public string nombreGrupo{get; private set;}
 
     public integrante(){
 

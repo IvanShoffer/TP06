@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "mostrarEquipo";
+}
+<h1>Estos son los integrantes de tu equipo</h1>
+
+    @foreach (integrante integrante in @ViewBag.listaIntegrantes)
+    {
+        <ul>
+            <li><p>Nombre: @integrante.nombre</p></li>
+            <li><p>Contraseña: @integrante.contraseña </p></li>
+            <li><p> Hobbie: @integrante.hobbie</p></li>
+            <li><p> Restricción Alimenticia: @integrante.restriccionAlimenticia </p></li>
+            <li><p> Domicilio: @integrante.domicilio</p></li>
+            <li><p> Edad: @integrante.edad</p></li>
+            <li><p> Grupo: @integrante.nombreGrupo</p></li>
+       </ul>
+    }
+

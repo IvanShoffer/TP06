@@ -3,6 +3,11 @@
 }
 
 <div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+    <h1>Iniciar sesión</h1>
+<form action = '@Url.Action("registrarSesion", "Home")' method ="POST" > 
+ Usuario:<input type = "text" name= "intentoU"/>
+ Contraseña:<input type = "text" name= "intentoC"/>
+  <input type= "submit" name= "guardar"/>
+ </form>
+
 </div>
