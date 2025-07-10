@@ -1,8 +1,9 @@
 @{
     ViewData["Title"] = "mostrarEquipo";
 }
+<div class="mostrarEquipo">
 <h1>Estos son los integrantes de tu equipo</h1>
-
+    <a href= '@Url.Action("Index","Home")'>Inicio</a>
     @foreach (integrante integrante in @ViewBag.listaIntegrantes)
     {
         <ul>
@@ -15,4 +16,4 @@
             <li><p> Grupo: @integrante.nombreGrupo</p></li>
        </ul>
     }
-
+</div>

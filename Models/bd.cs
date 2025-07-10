@@ -8,13 +8,13 @@ public class bd
 
     public List<integrante> iniciarSesion(string intentoU, string intentoC)
     {
-        List<integrante> integrantes = new List<integrante>();
+        List<integrante> listaIntegrantes = new List<integrante>();
         using(SqlConnection connection = new SqlConnection(_connectionString))
         {
-            string query = "SELECT * FROM Integrantes WHERE nombreGrupo = (SELECT nombreGrupo FROM Integrantes WHERE nombre=@pIntentoU AND contraseña=@pIntentoC)";
-            integrantes = connection.Query<integrante>(query, new{pIntentoU=intentoU}, new {pIntentoC=intentoC}).ToList();
+            string query = "SELECT * FROM Integrante WHERE nombreGrupo = (SELECT nombreGrupo FROM Integrante WHERE nombre=@pIntentoU AND contraseña=@pIntentoC)";
+            listaIntegrantes = connection.Query<integrante>(query, new{pIntentoU=intentoU, pIntentoC=intentoC}).ToList();
         }        
-        return integrantes;
+        return listaIntegrantes;
     } 
     
 }
