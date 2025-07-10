@@ -11,8 +11,8 @@ public class bd
         List<integrante> integrantes = new List<integrante>();
         using(SqlConnection connection = new SqlConnection(_connectionString))
         {
-            string query = "SELECT * FROM Integrantes WHERE nombreGrupo = (SELECT nombreGrupo FROM Integrantes WHERE nombre=@pIntentoU AND contrasena=@pIntentoC)";
-            integrantes = connection.Query<integrante>(query).ToList();
+            string query = "SELECT * FROM Integrantes WHERE nombreGrupo = (SELECT nombreGrupo FROM Integrantes WHERE nombre=@pIntentoU AND contraseña=@pIntentoC)";
+            integrantes = connection.Query<integrante>(query, new{pIntentoU=intentoU}, new {pIntentoC=intentoC}).ToList();
         }        
         return integrantes;
     } 
