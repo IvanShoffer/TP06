@@ -150,11 +150,6 @@ C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\TP06.RazorAssemblyInfo.cs
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\TP06.sourcelink.json
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets\msbuild.TP06.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets\msbuild.build.TP06.props
-C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TP06.props
-C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TP06.props
-C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\scopedcss\bundle\TP06.styles.css
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\TP06.csproj.Up2Date
 C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\TP06.dll
@@ -243,3 +238,10 @@ C:\Users\48861728\TP06\obj\Debug\net8.0\scopedcss\bundle\TP06.styles.css
 C:\Users\48861728\TP06\obj\Debug\net8.0\TP06.csproj.Up2Date
 C:\Users\48861728\TP06\obj\Debug\net8.0\TP06.genruntimeconfig.cache
 C:\Users\48861728\TP06\obj\Debug\net8.0\ref\TP06.dll
+C:\Users\48861728\Documents\TP06\bin\Debug\net8.0\TP06.staticwebassets.endpoints.json
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\48861728\Documents\TP06\obj\Debug\net8.0\staticwebassets.build.endpoints.json

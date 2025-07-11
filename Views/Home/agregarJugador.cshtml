@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "agregarJugador";
+}
+<a href= '@Url.Action("Index", "Home")'/></a>
+<h1> A continuacion ingrese los datos de la person</h1>
+<form action = '@Url.Action("InsertarJugador", "Home")' method ="POST" > 
+ nombre:<input type = "text" name= "nombre"/>
+ Contraseña:<input type = "password" name= "contraseña"/>
+ hobbie:<input type = "text" name= "hobbie"/>
+ Tiene restriccion alimenticia:<input type = "radio" name= "restriccionAlimenticia" value=true>verdadero<input type = "radio" name= "restriccionAlimenticia" value=false>falso
+ domicilio:<input type = "text" name= "domicilio"/>
+ edad:<input type = "number" name= "edad"/>
+ nombreGrupo:<input type = "text" name= "nombreGrupo"/>
+  <input type= "submit" name= "guardar"/>
+ </form>

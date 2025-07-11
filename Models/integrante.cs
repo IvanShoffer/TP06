@@ -1,5 +1,4 @@
 public class integrante{
-    public int id{get; private set;}
     public string nombre{get; private set;}
     public string contraseña{get; private set;}
     public string hobbie{get; private set;}
@@ -8,7 +7,14 @@ public class integrante{
     public int edad{get; private set;}
     public string nombreGrupo{get; private set;}
 
-    public integrante(){
-
+   public integrante(string nombre, string contraseña, string hobbie, bool restriccionAlimenticia, string domicilio, int edad, string nombreGrupo)
+    {
+        this.nombre = nombre;
+        this.contraseña = contraseña;
+        this.hobbie = hobbie;
+        this.restriccionAlimenticia = restriccionAlimenticia;
+        this.domicilio = domicilio;
+        this.edad = edad;
+        this.nombreGrupo = nombreGrupo;
     }
 }
