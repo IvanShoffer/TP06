@@ -17,24 +17,4 @@ public class bd
         return listaIntegrantes;
     } 
     
-    public void AgregarIntegrante(integrante jugador)
-{
-    string query = @"INSERT INTO integrante 
-    (nombre, contraseña, hobbie, restriccionAlimenticia, domicilio, edad, nombreGrupo)VALUES (@pNombre, @pContraseña, @pHobbie, @pRestriccion, @pDomicilio, @pEdad, @pGrupo)";
-
-    using (SqlConnection connection = new SqlConnection(_connectionString))
-    {
-        connection.Execute(query, new
-        {
-            pNombre = jugador.nombre,
-            pContraseña = SeguridadHelper.HashearSHA256(jugador.contraseña),
-            pHobbie = jugador.hobbie,
-            pRestriccion = jugador.restriccionAlimenticia,
-            pDomicilio = jugador.domicilio,
-            pEdad = jugador.edad,
-            pGrupo = jugador.nombreGrupo
-        });
-    }
-}
-    
 }

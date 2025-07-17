@@ -26,15 +26,4 @@ public class HomeController : Controller
         HttpContext.Session.SetString("baseDatos", objeto.ObjectToString(baseDatos));
         return View("mostrarEquipo");
     }
-   public IActionResult InsertarJugador(string nombre, string contraseña, string hobbie, bool restriccionAlimenticia, string domicilio, int edad, string nombreGrupo)
-{
-    bd baseDatos = objeto.StringToObject<bd>(HttpContext.Session.GetString("baseDatos"));
-    integrante jugador = new integrante(nombre, contraseña, hobbie, restriccionAlimenticia, domicilio, edad, nombreGrupo);
-
-     
-    baseDatos.AgregarIntegrante(jugador);
-    HttpContext.Session.SetString("baseDatos", objeto.ObjectToString(baseDatos));
-    return View("agregarJugador");
- 
-}
 }
